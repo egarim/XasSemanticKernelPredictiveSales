@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Chart" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.CloneObject.Xpo" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Dashboards" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Kpi" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Objects" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.PivotChart" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.PivotGrid" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.ReportsV2" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Security" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" Version="24.2.*" />
+    <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="24.2.*" />
+    <PackageReference Include="DevExpress.Persistent.Base" Version="24.2.*" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" Version="24.2.*" />
+    <PackageReference Include="Azure.Identity" Version="1.13.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.AI" Version="9.0.1-preview.1.24570.5" />
+		<PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.0.1-preview.1.24570.5" />
+		<PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.0.1-preview.1.24570.5" />
+		<PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.0.1-preview.1.24570.5" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
+		<PackageReference Include="System.Numerics.Tensors" Version="9.0.0" />
+		<PackageReference Include="System.Threading.RateLimiting" Version="9.0.0" />
+	</ItemGroup>
+</Project>
